@@ -14,14 +14,24 @@
 
   <body>
     <header id="main_navigation" class="clearfix">
-        <a href="#" class="name">Saud Maruli Sihombing</a>
+        <%= link_to "Saud maruli Sihombing", root_path, class: "name"%>
         <nav>
-            <a href="articles.html">Articles</a>
-            <a href="#">Projects</a>
-            <a href="contact.html">Contact</a>
+            <%= link_to "Articles", posts_path%>
+            <%= link_to "Projects", posts_path%>
+            <%= link_to "Contact", posts_path%>
         </nav>
     </header> 
-    
+
     <%= yield %>
+
+  <footer id="main_footer">
+      <p class="copyright">&copy;2019 Saud Maruli Sihombing</p>
+      <nav>
+        <a href="http://facebook.com/sauthrully" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="http://twitter.com/sauthrully" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="http://instagram.com/s_a_u_t_h" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="http://github.com/uthrul" target="_blank"><i class="fa fa-github"></i></a>
+      </nav>
+	</footer>
   </body>
 </html>
