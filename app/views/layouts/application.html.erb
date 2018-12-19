@@ -18,9 +18,20 @@
         <nav>
             <%= link_to "Articles", posts_path%>
             <%= link_to "Projects", projects_path %>
-            <%= link_to "Contact", contacts_path%>
-        </nav>
+            <%= link_to "Contact", new_contact_path %>
+
+            <% if user_signed_in? %>
+              <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+            <% end %>
+            
+          </nav>
     </header> 
+
+    <% if notice %>
+		  <p class="notice"><%= notice %></p>
+	  <% elsif alert %>
+		  <p class="alert"><%= alert %></p>
+	  <% end %>
 
     <%= yield %>
 
