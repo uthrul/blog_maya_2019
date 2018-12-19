@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'pygments.rb', '~> 1.2', '>= 1.2.1'
 gem 'redcarpet', '~> 3.4'
+gem 'friendly_id', '~> 5.2', '>= 5.2.4'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
