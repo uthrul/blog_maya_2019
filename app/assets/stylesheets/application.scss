@@ -29,6 +29,11 @@ body {
 	padding: 4rem 0;
 }
 
+iframe.twitter-timeline {
+	height: 150px!important;
+    min-height:380px!important;
+}
+
 .clearfix:before,
 .clearfix:after {
 	content: " ";
