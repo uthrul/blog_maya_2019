@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get 'wellcome/index'
   root 'wellcome#index'
 
-  get '*path' => redirect('/')
+  # get '*path' => redirect('/')
 end
