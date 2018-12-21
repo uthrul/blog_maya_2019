@@ -14,9 +14,9 @@ class PostsController < ApplicationController
         @post = Post.new post_params
 
         if @post.save
-            redirect_to @post, notice: "Hellz Yeah, Saud maruli!!! Your article was succesfull saved! "
+            redirect_to @post, notice: "Hellz Yeah, M A Y A  !!! Your article was succesfull saved! "
         else
-            render 'new', notice: "oOoh No, Saud!!! ! was unable to save your post. "
+            render 'new', notice: "oOoh No, M A Y A  !!! ! was unable to save your post. "
         end
     end
 
